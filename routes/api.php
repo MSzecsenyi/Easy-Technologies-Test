@@ -32,6 +32,8 @@ Route::get('/users/send-mail/{user}', [UserController::class, 'sendMail'])->name
 
 Route::get('/users/{id}', [UserController::class, 'show'])->name('users.show');
 
+Route::get('/users/{user}/has-role/{role}', [UserController::class, 'userHasRole'])->name('users.has-role');
+
 Route::post('/users', [UserController::class, 'store'])->name('users.store');
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

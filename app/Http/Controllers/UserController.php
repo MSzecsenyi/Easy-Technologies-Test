@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\CreateUserRequest;
 use App\Http\Resources\UserResource;
 use App\Jobs\SendEmailJob;
+use App\Models\Role;
 use App\Models\User;
 use App\Services\UserService;
 use Illuminate\Http\JsonResponse;
@@ -60,6 +61,18 @@ class UserController extends Controller
     public function showWithResource(User $user): UserResource
     {
         return new UserResource($user);
+    }
+
+    /**
+     * Display if the User has the requested Role. The User needs to exists, the Role can be any string
+     */
+    public function userHasRole(User $user, $role): JsonResponse
+    {
+        return response()->json([
+            'name' => $user->name,
+            'role' => $role,
+            'hasRole' => $user->hasRole($role),
+        ]);
     }
 
     /**

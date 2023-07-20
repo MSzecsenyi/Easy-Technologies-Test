@@ -99,6 +99,25 @@
 			"response": []
 		},
 		{
+			"name": "7. Check user roles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/show-with-resource/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"show-with-resource",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "8. Show with Resource",
 			"request": {
 				"method": "GET",

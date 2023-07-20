@@ -4,7 +4,7 @@ copy .env.example .env
 call php artisan key:generate
 call npm install
 :: Egy ures sqlite fajlnak leteznie kell, kulonben a migrate nem mukodik database/database.sqlite helyen
-call php artisan migrate:fresh
+call php artisan migrate:fresh --seed
 :: php artisan serve
 :: php artisan queue:work --queue=emails
 @pause
