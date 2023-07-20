@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "a901c100-154d-4a47-8ea9-679a62e31ac5",
+		"_postman_id": "8ad3d687-5208-436d-a8f8-1ed8a530a370",
 		"name": "Easy Technologies Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16262571",
-		"_collection_link": "https://lively-resonance-389952.postman.co/workspace/Kerrakt%C3%A1r~b126f071-50c2-4026-9094-75f40cb8a0ac/collection/16262571-a901c100-154d-4a47-8ea9-679a62e31ac5?action=share&creator=16262571&source=collection_link"
+		"_collection_link": "https://lively-resonance-389952.postman.co/workspace/Kerrakt%C3%A1r~b126f071-50c2-4026-9094-75f40cb8a0ac/collection/16262571-8ad3d687-5208-436d-a8f8-1ed8a530a370?action=share&creator=16262571&source=collection_link"
 	},
 	"item": [
 		{
@@ -104,14 +104,15 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/users/show-with-resource/1",
+					"raw": "{{url}}/users/1/has-role/role1",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
-						"show-with-resource",
-						"1"
+						"1",
+						"has-role",
+						"role1"
 					]
 				}
 			},
