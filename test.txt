@@ -1,0 +1,10 @@
+Laravel teszt:
+1. feladat: Készíts egy route-ot ami elfogad egy opcionális 'name' paramétert.
+2. feladat: Készíts egy controllert ami lekérdez az adatbázisból egy felhasználót ID alapján és visszaadja a nevét és az e-mail címét.
+3. feladat: Készíts egy függvényt ami Eloquent segítségével kilistázza azoknak a felhasználóknak a nevét és e-mail címét akik múlt héten regisztráltak.
+4. feladat: Készíts egy form request validációt egy controller methodjára, ami biztosítja azt, hogy a 'name' paraméter kötelező és string, 'email' paraméter unique az adatbázisban és a 'password' paraméter legalább 8 karakter.
+5. feladat: Készíts egy adatbázis migrációt ami létrehozza a 'posts' táblát 'id', 'title', 'content', 'user_id', 'created_at', 'updated_at', 'deleted_at' mezőkkel.
+6. feladat: Készíts egy controller method-ot, ami létrehoz egy felhasználót az adatbázisban. A controller lehetőség szerint maradjon rendezett, használj form requestet, service osztályt, repository osztályt a megoldáshoz. A method egy 200-as json válasszal térjen vissza, amennyiben sikeresen létrejött a felhasználó.
+7. feladat: Készíts egy Many-to-Many kapcsolatot a User és a Role modellek között (Egy felhasználónak lehet több jogköre és egy jogkörnek lehet több felhasználója). Továbbá, készíts egy method-ot a User osztályon belül, ami visszaadja, hogy az adott felhasználó szerepel-e egy a paraméterben megadott jogkörben.
+8. feladat: Készíts egy API resource-t a User modellre, ami kizárólag az 'id', 'name' és 'email' mezőket adja vissza.
+9. feladat: Készíts egy job-ot ami egy e-mailt küld a kiválasztott felhasználónak. A job fel kell legyen készítve az aszinkron futásra.

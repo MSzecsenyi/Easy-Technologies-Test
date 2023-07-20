@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "5899c179-4361-490b-ad75-f0169535a82d",
+		"name": "Easy Technologies Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16262571",
+		"_collection_link": "https://lively-resonance-389952.postman.co/workspace/Kerrakt%C3%A1r~b126f071-50c2-4026-9094-75f40cb8a0ac/collection/16262571-5899c179-4361-490b-ad75-f0169535a82d?action=share&creator=16262571&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "1.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/hello/Easy Technologies",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"hello",
+						"Easy Technologies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/last-week",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"last-week"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "6.",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"accept": true
+				}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"test5\",\r\n    \"email\": \"test5@nn.nn\",\r\n    \"password\": \"pwordpword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "8.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/show-with-resource/22",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"show-with-resource",
+						"22"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "9.",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users/show-with-resource/22",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users",
+						"show-with-resource",
+						"22"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
