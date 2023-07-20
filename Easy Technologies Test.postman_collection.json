@@ -1,14 +1,14 @@
 {
 	"info": {
-		"_postman_id": "5899c179-4361-490b-ad75-f0169535a82d",
+		"_postman_id": "a901c100-154d-4a47-8ea9-679a62e31ac5",
 		"name": "Easy Technologies Test",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "16262571",
-		"_collection_link": "https://lively-resonance-389952.postman.co/workspace/Kerrakt%C3%A1r~b126f071-50c2-4026-9094-75f40cb8a0ac/collection/16262571-5899c179-4361-490b-ad75-f0169535a82d?action=share&creator=16262571&source=collection_link"
+		"_collection_link": "https://lively-resonance-389952.postman.co/workspace/Kerrakt%C3%A1r~b126f071-50c2-4026-9094-75f40cb8a0ac/collection/16262571-a901c100-154d-4a47-8ea9-679a62e31ac5?action=share&creator=16262571&source=collection_link"
 	},
 	"item": [
 		{
-			"name": "1.",
+			"name": "1. Optional param",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -26,25 +26,25 @@
 			"response": []
 		},
 		{
-			"name": "2.",
+			"name": "2. Show user",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/users/3",
+					"raw": "{{url}}/users/1",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
-						"3"
+						"1"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "3.",
+			"name": "3. Users created last week",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -62,7 +62,7 @@
 			"response": []
 		},
 		{
-			"name": "6.",
+			"name": "6. Create user",
 			"protocolProfileBehavior": {
 				"disabledSystemHeaders": {
 					"accept": true
@@ -99,38 +99,38 @@
 			"response": []
 		},
 		{
-			"name": "8.",
+			"name": "8. Show with Resource",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/users/show-with-resource/22",
+					"raw": "{{url}}/users/show-with-resource/1",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
 						"show-with-resource",
-						"22"
+						"1"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "9.",
+			"name": "9. Send mail",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/users/show-with-resource/22",
+					"raw": "{{url}}/users/send-mail/1",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"users",
-						"show-with-resource",
-						"22"
+						"send-mail",
+						"1"
 					]
 				}
 			},
